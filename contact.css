@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact {
+    min-height: 100vh;
+    background: linear-gradient(to right, #2f05b7, #8709a7); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+    animation: fadeIn 1.5s ease-in-out; 
+}
+
+.contact-container {
+    background: rgba(98, 7, 89, 0.686);
+    border-radius: 15px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0px 4px 15px rgba(222, 53, 126, 0.3);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.contact-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.46);
+}
+
+h2 {
+    font-size: 36px;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.393);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out;
+    cursor: pointer;
+}
+
+.contact-box:hover {
+    background: rgba(49, 160, 225, 0.603);
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(96, 149, 219, 0.483);
+    animation: pulse 1.5s infinite; 
+}
+
+.contact-box i {
+    font-size: 24px;
+    color: #ffcc00; 
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-box:hover i {
+    transform: rotate(10deg) scale(1.2);
+}
+
+.contact-box p, 
+.contact-box a {
+    font-size: 18px;
+    color: #f8f9fa;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.contact-box a:hover {
+    color: #ffcc00;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(221, 27, 205, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(101, 11, 99, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(196, 54, 215, 0.2);
+    }
+}

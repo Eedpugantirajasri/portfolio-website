@@ -1,0 +1,109 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#study {
+    background: linear-gradient(to right, #8e44ad, #3498db); 
+    color: white;
+    text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2 {
+    font-size: 38px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+}
+
+.education-card {
+    background: rgba(255, 255, 255, 0.15); 
+    padding: 20px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+
+.education-card:hover {
+    transform: scale(1.07);
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.3);
+}
+
+.education-card h3 {
+    font-size: 22px;
+    color: #ffd700;
+    margin-bottom: 5px;
+    animation: glow 2s infinite alternate;
+}
+
+.education-card p {
+    font-size: 18px;
+    color: white;
+    margin: 5px 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0px 0px 5px rgba(255, 215, 0, 0.5);
+    }
+    to {
+        text-shadow: 0px 0px 15px rgba(255, 215, 0, 1);
+    }
+}
