@@ -6,7 +6,8 @@
 }
 
 #study {
-    background: linear-gradient(to right, #8e44ad, #3498db); 
+    /* background: linear-gradient(to right, #8e44ad, #3498db);  */
+    background: linear-gradient(to bottom right, #ff758c, #ff7eb3, #6a82fb);
     color: white;
     text-align: center;
     width: 100%;
